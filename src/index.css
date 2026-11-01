@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto Flex", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-voyage-canvas: #F8F7FC;
+  --color-voyage-surface: #FFFFFF;
+  --color-voyage-border: #EAE6F8;
+  --color-voyage-primary: #5D3BE0;
+  --color-voyage-secondary: #9E5AFD;
+  --color-voyage-tertiary: #10B981;
+  --color-voyage-ink: #3C2F80;
+  --color-voyage-muted: #6B619B;
+  --color-voyage-error: #BA1A1A;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F8F7FC;
+    color: #3C2F80;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #F8F7FC;
+    color: #3C2F80;
+  }
+}
+
+/* Earth Voyage custom input focus ring per design system */
+.voyage-input:focus {
+  outline: 2px solid #5D3BE0;
+  outline-offset: 0px;
+  box-shadow: 0 0 0 4px rgba(93, 59, 224, 0.15);
+  border-color: #5D3BE0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

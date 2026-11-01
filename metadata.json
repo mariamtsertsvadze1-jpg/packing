@@ -1,0 +1,6 @@
+{
+  "name": "Earth Voyage",
+  "description": "Editorial travel packing planner and readiness checklist with smart duration-scaled manifests, real-time progress tracking, and local persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
